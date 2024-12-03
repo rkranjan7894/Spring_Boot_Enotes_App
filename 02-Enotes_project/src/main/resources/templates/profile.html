@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{base::layout(~{::title},~{::section} )}">>
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Page</title>
+</head>
+<body>
+<section class="text-center"><br>
+<div class="card-body text-center text-primary fa-3x"><i class="fas fa-user-circle fa-3x"></i><br>Profile Page</div>
+<h4>Name:[[${user.name}]]</h4>
+<h4>Email:[[${user.email}]]</h4>
+    <h4>Qualification:[[${user.qualification}]]</h4>
+    <h4>Address:[[${user.address}]]</h4>
+    <h4>Gender:[[${user.gender}]]</h4>
+    <h4>Role:[[${user.role}]]</h4>
+<a href="/logout">Logout Here</a>
+</section>
+</body>
+</html>
